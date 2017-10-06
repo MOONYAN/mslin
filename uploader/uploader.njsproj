@@ -33,6 +33,9 @@
     <Compile Include="config\fileConfig.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="config\uploadConfig.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="routes\dataSheets.js">
       <SubType>Code</SubType>
     </Compile>
@@ -55,6 +58,9 @@
     <Folder Include="views\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="views\submit.pug">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config" />
   </ItemGroup>

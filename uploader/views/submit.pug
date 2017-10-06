@@ -1,0 +1,27 @@
+﻿extends layout
+
+block content
+    form(action = 'http://mslin.ee.ntut.edu.tw/cgi-bin/new/teacher/update_score.pl', method = 'post')
+        div id 
+            input(name='id', value=uploadConfig.id, readonly)
+        div digest 
+            input(name='digest',value=uploadConfig.digest ,readonly)
+        div cid 
+            input(name='cid',value=uploadConfig.cid ,readonly)
+        div itype 
+            input(name='itype',value=uploadConfig.itype ,readonly)
+        div img 
+            input(name='img',value=uploadConfig.img ,readonly)
+        div type 
+            input(name='type',value=uploadConfig.type ,readonly)
+        div hw 
+            input(name='hw',value=uploadConfig.hw ,readonly)        
+        br
+        table
+            each student in students
+                tr                   
+                    td
+                        input(name=getNumName(student),value = student[uploadConfig.IDAttribute])
+                        input(name=getScoreName(student),value = student[uploadConfig.ScoreAttribute])
+
+        input(type='submit',value='SUBMIT')
