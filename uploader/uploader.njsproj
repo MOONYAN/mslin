@@ -33,6 +33,9 @@
     <Compile Include="config\fileConfig.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="config\uploadConfig.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="routes\dataSheets.js">
       <SubType>Code</SubType>
     </Compile>

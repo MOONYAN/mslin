@@ -3,19 +3,19 @@
 block content
     form(action = 'http://mslin.ee.ntut.edu.tw/cgi-bin/new/teacher/update_score.pl', method = 'post')
         div id 
-            input(name='id', value='t106598010',readonly)
+            input(name='id', value=uploadConfig.id, readonly)
         div digest 
-            input(name='digest',value='d4d62eff49c43fb77fe77e37ff8eaeaa',readonly)
+            input(name='digest',value=uploadConfig.digest ,readonly)
         div cid 
-            input(name='cid',value='t106598010_windowsprogramming',readonly)
+            input(name='cid',value=uploadConfig.cid ,readonly)
         div itype 
-            input(name='itype',value='test',readonly)
+            input(name='itype',value=uploadConfig.itype ,readonly)
         div img 
-            input(name='img',value=7 ,readonly)
+            input(name='img',value=uploadConfig.img ,readonly)
         div type 
-            input(name='type',value='teacher',readonly)
+            input(name='type',value=uploadConfig.type ,readonly)
         div hw 
-            input(name='hw',value=3 ,readonly)        
+            input(name='hw',value=uploadConfig.hw ,readonly)        
         br
         table
             each student in students
