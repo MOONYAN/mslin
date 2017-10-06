@@ -1,0 +1,27 @@
+﻿extends layout
+
+block content
+    form(action = 'http://mslin.ee.ntut.edu.tw/cgi-bin/new/teacher/update_score.pl', method = 'post')
+        div id 
+            input(name='id', value='t106598010',readonly)
+        div digest 
+            input(name='digest',value='d4d62eff49c43fb77fe77e37ff8eaeaa',readonly)
+        div cid 
+            input(name='cid',value='t106598010_windowsprogramming',readonly)
+        div itype 
+            input(name='itype',value='test',readonly)
+        div img 
+            input(name='img',value=7 ,readonly)
+        div type 
+            input(name='type',value='teacher',readonly)
+        div hw 
+            input(name='hw',value=3 ,readonly)        
+        br
+        table
+            each student in students
+                tr                   
+                    td
+                        input(name="num["+student['序號']+"]",value = student['學號'])
+                        input(name="score["+student['序號']+"]",value = student['HW#1'])
+
+        input(type='submit',value='SUBMIT')

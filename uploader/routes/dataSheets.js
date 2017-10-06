@@ -8,7 +8,7 @@ var workbook = XLSX.readFile(filePath);
 var students = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName]);
 
 router.get('/', function (req, res) {
-    return res.json({ students: students });
+    res.render('submit', { students: students });
 });
 
 module.exports = router;
