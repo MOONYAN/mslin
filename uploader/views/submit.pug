@@ -21,7 +21,7 @@ block content
             each student in students
                 tr                   
                     td
-                        input(name="num["+student['序號']+"]",value = student['學號'])
-                        input(name="score["+student['序號']+"]",value = student['HW#1'])
+                        input(name=getNumName(student),value = student[uploadConfig.IDAttribute])
+                        input(name=getScoreName(student),value = student[uploadConfig.ScoreAttribute])
 
         input(type='submit',value='SUBMIT')

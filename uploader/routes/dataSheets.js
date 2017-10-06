@@ -11,7 +11,13 @@ var students = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName]);
 router.get('/', function (req, res) {
     res.render('submit', {
         students: students,
-        uploadConfig: uploadConfig       
+        uploadConfig: uploadConfig,
+        getNumName: function (student) {
+            return `num[${student[uploadConfig.TrickyAttribute]}]`;
+        },
+        getScoreName: function (student) {
+            return `score[${student[uploadConfig.TrickyAttribute]}]`;
+        }
     });
 });
 

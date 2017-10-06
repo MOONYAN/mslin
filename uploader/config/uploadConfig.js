@@ -6,5 +6,8 @@ module.exports = {
     itype: 'test',
     img: 7,
     type: 'teacher',
-    hw: 3
+    hw: 3,
+    IDAttribute: '學號',
+    ScoreAttribute: 'HW#1',
+    TrickyAttribute: '序號'
 };
