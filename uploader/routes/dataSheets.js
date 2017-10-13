@@ -17,6 +17,9 @@ router.get('/', function (req, res) {
         },
         getScoreName: function (student) {
             return `score[${student[uploadConfig.TrickyAttribute]}]`;
+        },
+        getCommentName: function (student) {
+            return `comment[${student[uploadConfig.TrickyAttribute]}]`;
         }
     });
 });

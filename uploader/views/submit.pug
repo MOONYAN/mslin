@@ -1,7 +1,7 @@
 ﻿extends layout
 
 block content
-    form(action = 'http://mslin.ee.ntut.edu.tw/cgi-bin/new/teacher/update_score.pl', method = 'post')
+    form(action = 'http://mslin.ee.ntut.edu.tw/cgi-bin/new/teacher/update_score.pl', method = 'post', accept-charset='big5')
         div id 
             input(name='id', value=uploadConfig.id, readonly)
         div digest 
@@ -23,5 +23,6 @@ block content
                     td
                         input(name=getNumName(student),value = student[uploadConfig.IDAttribute])
                         input(name=getScoreName(student),value = student[uploadConfig.ScoreAttribute])
+                        input(name=getCommentName(student),value = student)
 
         input(type='submit',value='SUBMIT')
