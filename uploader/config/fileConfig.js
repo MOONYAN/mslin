@@ -1,6 +1,6 @@
 ﻿'use strict';
 
 module.exports = {
-    filePath: 'Windows Homework #2.xlsx',
-    sheetName: 'HW2'
+    filePath: 'Windows Homework #3.xlsx',
+    sheetName: 'HW3'
 };
